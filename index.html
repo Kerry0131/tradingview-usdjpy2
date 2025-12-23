@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>USDJPY 15m/1h/4h</title>
+  <style>
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    header { padding: 10px 14px; border-bottom: 1px solid #ddd; }
+    .grid { display: grid; gap: 10px; padding: 10px; }
+    @media (min-width: 1100px) { .grid { grid-template-columns: 1fr 1fr 1fr; } }
+    @media (max-width: 1099px) { .grid { grid-template-columns: 1fr; } }
+    .card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+    .card h2 { margin: 0; padding: 8px 10px; font-size: 14px; border-bottom: 1px solid #eee; }
+    .tv { height: 520px; }
+  </style>
+</head>
+<body>
+  <header><strong>USDJPY</strong>（15分 / 1時間 / 4時間）</header>
+
+  <div class="grid">
+    <div class="card">
+      <h2>15分</h2>
+      <div class="tv">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+          <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+          {"symbol":"FX:USDJPY","interval":"15","timezone":"Asia/Tokyo","theme":"light","locale":"ja","hide_top_toolbar":false,"hide_side_toolbar":true,"allow_symbol_change":false,"autosize":true}
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>1時間</h2>
+      <div class="tv">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+          <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+          {"symbol":"FX:USDJPY","interval":"60","timezone":"Asia/Tokyo","theme":"light","locale":"ja","hide_top_toolbar":false,"hide_side_toolbar":true,"allow_symbol_change":false,"autosize":true}
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>4時間</h2>
+      <div class="tv">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+          <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+          {"symbol":"FX:USDJPY","interval":"240","timezone":"Asia/Tokyo","theme":"light","locale":"ja","hide_top_toolbar":false,"hide_side_toolbar":true,"allow_symbol_change":false,"autosize":true}
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
